@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_calender_loc"
+        android:icon="@drawable/ic_location"
+        android:title="所在位置" />
+
+    <item
+        android:id="@+id/item_calender_city"
+        android:icon="@drawable/ic_city"
+        android:title="所在城市" />
+
+    <item
+        android:id="@+id/item_calender_weather"
+        android:icon="@drawable/ic_weather"
+        android:title="天气状况" />
+
+    <item
+        android:id="@+id/item_calender_maxtemp"
+        android:icon="@drawable/ic_maxtemp"
+        android:title="最高温度" />
+
+    <item
+        android:id="@+id/item_calender_mintemp"
+        android:icon="@drawable/ic_mintemp"
+        android:title="最低温度" />
+
+    <item
+        android:id="@+id/item_calender_todayweather"
+        android:icon="@drawable/ic_todayweather"
+        android:title="今日天气播报" />
+
+    <item
+        android:id="@+id/item_calender_forcast"
+        android:icon="@drawable/ic_forcast"
+        android:title="未来天气预报" />
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView76"
+            android:layout_width="match_parent"
+            android:layout_height="7dp" />
+
+        <LinearLayout
+            android:layout_width="545dp"
+            android:layout_height="69dp"
+            android:background="@drawable/rounded_layout_main"
+            android:orientation="horizontal">
+
+            <com.example.finalwork2.Utils.RoundImageView
+                android:id="@+id/birth_iv_img"
+                android:layout_width="73dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                app:type="circle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0">
+
+                <LinearLayout
+                    android:layout_width="237dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/birth_tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:gravity="center|start"
+                        android:text="TextView"
+                        android:textColor="@color/black_bg"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/brith_tv_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:gravity="center|start"
+                        android:textColor="@color/black_bg"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="239dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="match_parent"
+            android:layout_height="7dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

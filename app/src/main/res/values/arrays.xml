@@ -1,0 +1,12 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>应用内弹窗提醒</item>
+        <item>手机通知提醒</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>应用内弹窗提醒</item>
+        <item>手机通知提醒</item>
+    </string-array>
+</resources>

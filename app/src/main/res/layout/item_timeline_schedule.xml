@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rlTimeline"
+        android:layout_width="32dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTopLine"
+            android:layout_width="3dp"
+            android:layout_height="12dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFF" />
+
+        <TextView
+            android:id="@+id/tvDot"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/tvTopLine"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/style_timeline_1" />
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tvDot"
+            android:layout_centerHorizontal="true"
+            android:background="#FFF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCenter"
+        android:layout_width="387dp"
+        android:layout_height="80dp"
+        android:paddingTop="6dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/tv_timeline_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00-10:45"
+            android:textColor="@color/white_bg"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_timeline_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_timeline_date"
+            android:layout_marginTop="3dp"
+            android:text="日程标题"
+            android:textColor="@color/white_bg"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</LinearLayout>

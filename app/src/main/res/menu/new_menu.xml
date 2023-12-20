@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/item_all_schedule"
+        android:icon="@drawable/ic_all_schedule"
+        android:title="全部日程" />
+
+    <item
+        android:id="@+id/item_statistic_schedule"
+        android:icon="@drawable/ic_tongji_schedule"
+        android:title="日程统计" />
+
+    <item
+        android:id="@+id/item_finish_schedule"
+        android:icon="@drawable/ic_finish_schedule"
+        android:title="完成事项" />
+
+    <item
+        android:id="@+id/item_wait_schedule"
+        android:icon="@drawable/ic_wait_schedule"
+        android:title="待办事项" />
+
+    <item
+        android:id="@+id/item_memo"
+        android:icon="@drawable/ic_beiwanglu"
+        android:title="备忘录合集" />
+
+    <item
+        android:id="@+id/item_add_memo"
+        android:icon="@drawable/ic_addbox"
+        android:title="添加备忘录" />
+</menu>

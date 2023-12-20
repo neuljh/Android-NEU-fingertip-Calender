@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/birthinfor_bg2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="565dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView176"
+            android:layout_width="match_parent"
+            android:layout_height="7dp" />
+
+        <LinearLayout
+            android:layout_width="545dp"
+            android:layout_height="69dp"
+            android:background="@drawable/corners_bg_touming"
+            android:orientation="horizontal">
+
+            <com.example.finalwork2.Utils.RoundImageView
+                android:id="@+id/birth_iv_img_infor"
+                android:layout_width="73dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                app:type="circle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/birth_tv_title_infor"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:gravity="center|start"
+                        android:text="TextView"
+                        android:textColor="@color/white_bg"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/brith_tv_birthday_infor"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:gravity="center|start"
+                        android:text="TextView"
+                        android:textColor="@color/white_bg" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="239dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView173"
+            android:layout_width="match_parent"
+            android:layout_height="7dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="533dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@mipmap/birth" />
+
+            <TextView
+                android:id="@+id/tv_birth_message_infor"
+                android:layout_width="359dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/pink_700"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.033" />
+
+            <TextView
+                android:id="@+id/tv_birth_day_infor"
+                android:layout_width="191dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_layout"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/pink_500"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.361" />
+
+            <TextView
+                android:id="@+id/tv_virth_infor_julishengri"
+                android:layout_width="187dp"
+                android:layout_height="49dp"
+                android:text="TextView"
+                android:background="@drawable/rounded_layout"
+                android:textColor="@color/pink_700"
+                android:textSize="30sp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.158"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.154" />
+
+            <TextView
+                android:id="@+id/tv_birth_infor_dansheng"
+                android:layout_width="352dp"
+                android:layout_height="47dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/pink_700"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.029"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.256" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="548dp"
+                android:layout_height="75dp"
+                android:background="@drawable/corners_bg"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.29"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.716">
+
+                <com.example.finalwork2.Utils.RoundImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/corners_bg_touming"
+                    app:srcCompat="@mipmap/birthday"
+                    app:type="circle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_shengxiao"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/white_bg"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_xingzuo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/white_bg"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_birthday_infor_delete"
+                android:layout_width="97dp"
+                android:layout_height="77dp"
+                android:tint="@color/bohelv"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.932"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.964"
+                app:srcCompat="@drawable/ic_delete" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

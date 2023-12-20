@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/world_bg"
+    tools:context=".Activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/black01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/w_user"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:background="@drawable/corners_bg">
+
+            <com.example.finalwork2.Utils.RoundImageView
+                android:id="@+id/iv_user"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/lith"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.022"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.615"
+                app:type="circle"/>
+
+            <TextView
+                android:id="@+id/textView93"
+                android:layout_width="264dp"
+                android:layout_height="42dp"
+                android:text="欢迎使用东大日历App!"
+                android:textColor="@color/white_bg"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.816"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/black02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/w_friend"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/corners_bg">
+
+            <ImageView
+                android:id="@+id/iv_next_notification"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_enter"
+                android:tint="@color/white_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.954"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.48" />
+
+            <TextView
+                android:id="@+id/notification"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="朋友圈"
+                android:textColor="@color/white_bg"
+                android:textSize="23dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.305"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="81dp"
+                android:layout_height="61dp"
+                android:src="@drawable/ic_world_main"
+                android:tint="@color/white_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/notification"
+                app:layout_constraintHorizontal_bias="0.125"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/w_letter"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/corners_bg">
+
+            <ImageView
+                android:id="@+id/iv_next_picture"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_enter"
+                android:tint="@color/white_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.954"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.48" />
+
+            <TextView
+                android:id="@+id/more_picture"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="追忆信箱"
+                android:textColor="@color/white_bg"
+                android:textSize="23dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.323"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.4" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="85dp"
+                android:layout_height="61dp"
+                android:src="@android:drawable/ic_media_play"
+                android:tint="@color/white_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/more_picture"
+                app:layout_constraintHorizontal_bias="0.124"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/black03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+
+
+
+    </LinearLayout>
+</FrameLayout>

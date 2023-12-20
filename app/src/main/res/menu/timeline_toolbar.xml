@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- about showAsAction
+          ifRoom: The action will display as a button,if there is enough room in app bar for it.
+          If there is not enough room, the action will be send to the overflow menu.
+          never: The action will always listed in the overflow menu.
+   -->
+    <item
+        android:id="@+id/action_back"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:title="one"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_share"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="one"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/minf_bg"
+    tools:context=".Fragment.MineFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="17dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+        <LinearLayout
+            android:layout_width="580dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_minefra_infor"
+                android:layout_width="561dp"
+                android:layout_height="159dp"
+                android:background="@drawable/corners_bg">
+
+                <ImageView
+                    android:id="@+id/mine_iv_img"
+                    android:layout_width="52dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/ic_launcher_round"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.052"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.128" />
+
+                <TextView
+                    android:id="@+id/mine_tv_name"
+                    android:layout_width="84dp"
+                    android:layout_height="34dp"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.301"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.207" />
+
+                <ImageView
+                    android:id="@+id/mine_iv_ring"
+                    android:layout_width="74dp"
+                    android:layout_height="53dp"
+                    android:src="@drawable/ic_notifications24dp"
+                    android:backgroundTint="@color/white_bg"
+                    android:tint="@color/white_bg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.983"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.103" />
+
+                <LinearLayout
+                    android:layout_width="561dp"
+                    android:layout_height="81dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0">
+
+                    <LinearLayout
+                        android:layout_width="561dp"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mine_tv_createtimes"
+                            android:layout_width="187dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:textSize="30sp"
+                            android:text="1"
+                            android:textColor="@color/white_bg" />
+
+                        <TextView
+                            android:id="@+id/mine_tv_finishtimes"
+                            android:layout_width="187dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:textSize="30sp"
+                            android:text="2"
+                            android:textColor="@color/white_bg" />
+
+                        <TextView
+                            android:id="@+id/mine_tv_nofinshtimes"
+                            android:layout_width="187dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:textSize="30sp"
+                            android:text="3"
+                            android:textColor="@color/white_bg" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mine_tv_create"
+                            android:layout_width="187dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:text="创建日程"
+                            android:textColor="@color/white_bg" />
+
+                        <TextView
+                            android:id="@+id/mine_tv_finsh"
+                            android:layout_width="187dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:text="完成日程"
+                            android:textColor="@color/white_bg" />
+
+                        <TextView
+                            android:id="@+id/mine_tv_nofinish"
+                            android:layout_width="187dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:text="逾期日程"
+                            android:textColor="@color/white_bg" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/mine_linerlay_tongjischedule"
+                android:layout_width="563dp"
+                android:layout_height="78dp"
+                android:background="@drawable/corners_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/mine_iv_tongjischedule"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:backgroundTint="@color/white_bg"
+                    android:tint="@color/white_bg"
+                    android:src="@drawable/ic_tongji_schedule" />
+
+                <TextView
+                    android:id="@+id/mine_tv_tongjischedule"
+                    android:layout_width="435dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:text="日程统计"
+                    android:textColor="@color/white_bg"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:backgroundTint="@color/white_bg"
+                    android:tint="@color/white_bg"
+                    android:src="@drawable/ic_enter" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/all"
+                android:layout_width="563dp"
+                android:layout_height="345dp"
+                android:background="@drawable/corners_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/mine_linerlay_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white_bg"
+                        android:tint="@color/white_bg"
+                        android:src="@drawable/ic_cake" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="435dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="我的生日"
+                        android:textColor="@color/white_bg"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white_bg"
+                        android:tint="@color/white_bg"
+                        android:src="@drawable/ic_enter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_linearlay_daojishi"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white_bg"
+                        android:tint="@color/white_bg"
+                        android:src="@drawable/ic_daojishi" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="435dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="特殊倒计时"
+                        android:textColor="@color/white_bg"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white_bg"
+                        android:tint="@color/white_bg"
+                        android:src="@drawable/ic_enter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_linearlay_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="73dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white_bg"
+                        android:tint="@color/white_bg"
+                        android:src="@drawable/ic_notifications24dp" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="435dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="消息推送"
+                        android:textColor="@color/white_bg"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white_bg"
+                        android:tint="@color/white_bg"
+                        android:src="@drawable/ic_enter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_linearlay_safty"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="73dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white_bg"
+                        android:tint="@color/white_bg"
+                        android:src="@drawable/ic_lock" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="435dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="账号安全"
+                        android:textColor="@color/white_bg"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white_bg"
+                        android:tint="@color/white_bg"
+                        android:src="@drawable/ic_enter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_linearlay_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="73dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white_bg"
+                        android:tint="@color/white_bg"
+                        android:src="@drawable/ic_settings" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="435dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="设置"
+                        android:textColor="@color/white_bg"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white_bg"
+                        android:tint="@color/white_bg"
+                        android:src="@drawable/ic_enter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_linearlay_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="73dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white_bg"
+                        android:tint="@color/white_bg"
+                        android:src="@drawable/ic_help" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="435dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="帮助与指南"
+                        android:textColor="@color/white_bg"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white_bg"
+                        android:tint="@color/white_bg"
+                        android:src="@drawable/ic_enter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_linearlay_aboutapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="73dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white_bg"
+                        android:tint="@color/white_bg"
+                        android:src="@drawable/ic_apps" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="435dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="关于本软件"
+                        android:textColor="@color/white_bg"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white_bg"
+                        android:tint="@color/white_bg"
+                        android:src="@drawable/ic_enter" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+    </LinearLayout>
+</FrameLayout>

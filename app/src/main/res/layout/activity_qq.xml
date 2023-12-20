@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/qq_bg"
+    tools:context=".Activity.QQActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="341dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            app:srcCompat="@mipmap/qq_left" />
+
+        <com.example.finalwork2.Utils.RoundImageView
+            android:id="@+id/iv_getimg"
+            android:layout_width="139dp"
+            android:layout_height="98dp"
+            app:srcCompat="@mipmap/qq_left"
+            app:type="circle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView86"
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+        <LinearLayout
+            android:layout_width="485dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_qq"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/corners_bg"
+                android:textColor="@color/white_bg"
+                android:drawableTint="@color/white_bg"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="请输入您的QQ号"
+                android:drawableStart="@drawable/ic_power"
+                android:drawableEnd="@drawable/ic_star"
+                android:inputType="textPersonName"
+
+                android:textColorHint="@color/white_bg" />
+
+            <TextView
+                android:id="@+id/textView88"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+            <EditText
+                android:id="@+id/et_getname"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/corners_bg"
+                android:drawableStart="@drawable/ic_person"
+                android:drawableEnd="@drawable/ic_star"
+                android:drawableTint="@color/white_bg"
+                android:gravity="center"
+                android:ems="10"
+                android:hint="该怎么称呼你呢？这里是你qq的昵称"
+                android:textColorHint="@color/white_bg"
+                android:inputType="textPersonName"
+                android:textColor="@color/white_bg"
+                android:editable="false"/>
+
+            <TextView
+                android:id="@+id/textView92"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/bt_qq_confirm"
+                android:background="@drawable/corners_bg"
+                android:textColor="@color/white_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="绑定" />
+
+            <TextView
+                android:id="@+id/textView89"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/bt_qq_back"
+                android:background="@drawable/corners_bg"
+                android:textColor="@color/white_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="返回" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView87"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corners_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/black11"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/black03"
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:text="" />
+
+            <com.example.finalwork2.Utils.RoundImageView
+                android:id="@+id/iv_user"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/neu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.022"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.615"
+                app:type="circle"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="51dp" />
+
+            <TextView
+                android:id="@+id/tv_pyq_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:text="10:30"
+                android:textColor="@color/white_bg"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_pyq_name"
+                    android:layout_width="266dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical|center"
+                    android:text="xxx"
+                    android:textColor="@color/white_bg"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_pyq__date"
+                    android:layout_width="254dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical|center"
+                    android:text="06-07"
+                    android:textColor="@color/white_bg"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_pyq__content"
+                android:layout_width="468dp"
+                android:layout_height="101dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/corners_bg"
+                android:text="TextView"
+                android:textColor="@color/white_bg"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
